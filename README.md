@@ -1,4 +1,6 @@
-<h1 align="center"> Easy Weather JS </h1>
+<p align="center">
+<img src="banner.png">
+</p>
 
 <p align="center">
 <img src="tokyoweather.png" width="640" height="360">
