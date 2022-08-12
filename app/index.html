@@ -12,7 +12,7 @@
 
     <div id="card">
         <input id="cityInput" type="text" placeholder="London">
-        <button onclick="getWeather()" class="searchButton">
+        <button onclick="getWeather()" class="searchButton" id="searchButton">
             <i class="fa fa-search"></i>
         </button>
         <br>
@@ -34,9 +34,16 @@
         </form>
         
     </div>
-    
-    <script src="app.js">
+    <script>
+        var input = document.getElementById("cityInput");
+        input.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("searchButton").click();
+            }
+        });
     </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
