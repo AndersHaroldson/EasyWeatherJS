@@ -5,6 +5,7 @@
 
 body {
     height: 100vh;
+    background-image: url("london.jpg");
     background-color: rgba(22, 22, 22, 0.42);
     font-family: 'Comfortaa';
     font-size: 22px;
