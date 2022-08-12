@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<img src="tokyoweather.png" width="640" height="360">
+<img src="tokyo.png" width="640" height="360">
 </p>
 
 # Features:
