@@ -36,8 +36,11 @@ async function getWeather() {
     var icon = document.getElementById("icon").src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
     var wind = document.getElementById("wind").innerHTML = "Wind Speed: " + Math.floor(data.wind.speed) + " " + unitSymbolWind;
     
-    // Change the background according to the current city
-    document.body.style.backgroundImage = `url(https://source.unsplash.com/1920x1080/?${data.name})`;
+    // This prepares the name for going into the URL
+    // Without this, the images do not load for cities with spaces, such as New York
+    var modifiedName = encodeURIComponent(data.name.trim());
+    // Change the background iamge according to the current city
+    document.body.style.backgroundImage = `url(https://source.unsplash.com/1920x1080/?${modifiedName})`;
 
 
     return data;
