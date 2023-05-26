@@ -39,7 +39,7 @@ async function getWeather() {
     // This prepares the name for going into the URL
     // Without this, the images do not load for cities with spaces, such as New York
     var modifiedName = encodeURIComponent(data.name.trim());
-    // Change the background iamge according to the current city
+    // Change the background image according to the current city
     document.body.style.backgroundImage = `url(https://source.unsplash.com/1920x1080/?${modifiedName})`;
 
 
